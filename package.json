@@ -4,10 +4,42 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "start": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo\"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
   },
-  "keywords": ["devops", "nodejs", "express", "web"],
-  "author": "101383730-Yeganeh Daneshparvar",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YegDan/comp3104.git"
+  },
+  "keywords": [
+    "devops",
+    "nodejs",
+    "express",
+    "web"
+  ],
+  "author": "Yeganeh Daneshparvar",
+  "license": "ISC",
+  "homepage": "https://github.com/YegDan/comp3104#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "travis": "^0.1.1",
+    "web-vitals": "^3.5.0",
+    "yarn": "^1.13.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
